@@ -75,10 +75,16 @@ basic.forever(function () {
         }
         basic.pause(100)
     } else if (_type == 3) {
+        for (let y = 0; y <= 4; y++) {
+            item = list[y]
+        }
         item.push(item.pop())
         basic.pause(100)
     } else if (_type == 4) {
-        item.push(item.pop())
+        for (let y = 0; y <= 4; y++) {
+            item = list[y]
+        }
+        item.push(item.shift())
         basic.pause(100)
     }
 })
